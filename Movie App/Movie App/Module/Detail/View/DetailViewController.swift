@@ -61,6 +61,8 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
+        navigationController?.navigationBar.prefersLargeTitles = false
+        title = "Detail Movie"
         view.backgroundColor = .white
     }
     

@@ -43,6 +43,8 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.modalPresentationStyle = .fullScreen
+        navigationController?.navigationBar.prefersLargeTitles = true
+        title = "Home"
         setUpCollectionView()
         self.presenter.getMovies(page: currentPage)
             .observe(on: MainScheduler.instance)

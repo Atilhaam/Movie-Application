@@ -24,7 +24,8 @@ class MovieUserReviewViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         setupTableView()
-
+        navigationController?.navigationBar.prefersLargeTitles = true
+        title = "Reviews"
         // Do any additional setup after loading the view.
     }
     

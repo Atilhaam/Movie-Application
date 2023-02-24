@@ -22,6 +22,8 @@ class MovieVideosViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         setupTableView()
+        navigationController?.navigationBar.prefersLargeTitles = true
+        title = "Videos"
 
         // Do any additional setup after loading the view.
     }
