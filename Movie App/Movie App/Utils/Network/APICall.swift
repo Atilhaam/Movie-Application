@@ -11,7 +11,6 @@ struct API {
 
     static let baseUrlMovies = "https://api.themoviedb.org/3/movie/popular"
     static let baseUrlMovieDetail = "https://api.themoviedb.org/3/movie"
-    static let baseMovie = "https://api.themoviedb.org/3/movie/505642/videos?api_key=7a0390056fc89dd647a1702177f5adab&language=en-US"
     static var idMovie = ""
     static var page = ""
     

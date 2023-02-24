@@ -15,7 +15,6 @@ struct MovieDetailResponse: Decodable {
     let productionCompany: [ProductionCompany]?
     let status: String?
     let releaseDate: String?
-//    let runtime: String?
     let genres: [Genres]?
     let voteAverage: Double?
     let productionCountries: [ProductionCountries]?
@@ -28,7 +27,6 @@ struct MovieDetailResponse: Decodable {
         case productionCompany = "production_companies"
         case status
         case releaseDate = "release_date"
-//        case runtime
         case genres
         case voteAverage = "vote_average"
         case productionCountries = "production_countries"
@@ -44,7 +42,6 @@ struct MovieDetailResponse: Decodable {
         overview = try container.decodeIfPresent(String.self, forKey: .overview)
         productionCompany = try container.decodeIfPresent([ProductionCompany].self, forKey: .productionCompany)
         status = try container.decodeIfPresent(String.self, forKey: .status)
-//        runtime = try container.decodeIfPresent(String.self, forKey: .runtime)
         genres = try container.decodeIfPresent([Genres].self, forKey: .genres)
         voteAverage = try container.decodeIfPresent(Double.self, forKey: .voteAverage)
         productionCountries = try container.decodeIfPresent([ProductionCountries].self, forKey: .productionCountries)
@@ -100,13 +97,10 @@ struct MovieUserReviewResponse: Decodable {
 
 struct AuthorDetails: Decodable {
     let username: String
-//    let avatarpath: String?
-//    let rating: String?
     
     enum CodingKeys: String, CodingKey {
         case username
-//        case avatarpath = "avatar_path"
-//        case rating
+
     }
     
 }
